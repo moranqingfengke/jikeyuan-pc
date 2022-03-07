@@ -4,11 +4,22 @@ import VueRouter from 'vue-router'
 import Login from '@/views/Login.vue'
 // token
 import auth from '@/utils/auth.js'
+// 主页布局
+import Layout from '@/views/Layout.vue'
+// 数据概览
+import Home from '@/views/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/login', component: Login }
+  { path: '/login', component: Login },
+  {
+    path: '/',
+    component: Layout,
+    children: [
+      { path: '/', component: Home }
+    ]
+  }
 ]
 
 const router = new VueRouter({
