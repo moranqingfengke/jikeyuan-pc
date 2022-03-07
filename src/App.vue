@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <h1>APP根组件</h1>
-    <el-button type="primary">主要按钮</el-button>
+  <div class="app">
+    <router-view></router-view>
   </div>
 </template>
 
@@ -12,5 +11,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+* {
+  margin: 0;
+  padding: 0;
+}
 </style>
