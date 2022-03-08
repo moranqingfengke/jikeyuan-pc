@@ -6,7 +6,8 @@
         background-color="#023"
         style="border-right:none"
         text-color="#fff"
-        default-active="/"
+        :default-active="$route.path"
+        router
         >
           <el-menu-item index="/">
             <i class="el-icon-s-home"></i>

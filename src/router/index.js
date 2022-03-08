@@ -8,6 +8,8 @@ import auth from '@/utils/auth.js'
 import Layout from '@/views/Layout.vue'
 // 数据概览
 import Home from '@/views/Home.vue'
+// 文章内容
+import Article from '@/views/Article.vue'
 
 Vue.use(VueRouter)
 
@@ -17,7 +19,8 @@ const routes = [
     path: '/',
     component: Layout,
     children: [
-      { path: '/', component: Home }
+      { path: '/', component: Home },
+      { path: '/article', component: Article }
     ]
   }
 ]
