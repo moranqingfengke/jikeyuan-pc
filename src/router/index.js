@@ -10,6 +10,8 @@ import Layout from '@/views/Layout.vue'
 import Home from '@/views/Home.vue'
 // 文章内容
 import Article from '@/views/Article.vue'
+// 发表文章
+import Publish from '@/views/PublishPage.vue'
 
 Vue.use(VueRouter)
 
@@ -20,7 +22,8 @@ const routes = [
     component: Layout,
     children: [
       { path: '/', component: Home },
-      { path: '/article', component: Article }
+      { path: '/article', component: Article },
+      { path: '/publish', component: Publish }
     ]
   }
 ]

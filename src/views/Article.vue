@@ -75,7 +75,7 @@
         <el-table-column label="点赞数" prop="like_count" width="120px"></el-table-column>
         <el-table-column label="操作">
           <template slot-scope="scope">
-            <el-button type="primary" icon="el-icon-edit" circle plain></el-button>
+            <el-button @click="$router.push('/publish?id='+scope.row.id)" type="primary" icon="el-icon-edit" circle plain></el-button>
             <el-button @click="deleteArticle(scope.row.id)" type="danger" icon="el-icon-delete" circle plain></el-button>
           </template>
         </el-table-column>
