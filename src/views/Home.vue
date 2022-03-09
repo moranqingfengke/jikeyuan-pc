@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    home
+    <h2>详情见内容管理和发表文章</h2>
   </div>
 </template>
 
